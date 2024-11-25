@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Iniciar sesión</h1>
+    <form action="{{ url_for('login') }}" method="POST">
+        <label for="username">Nombre de usuario:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</body>
+</html>

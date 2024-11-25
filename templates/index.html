@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Bienvenido a nuestra aplicación</h1>
+    <a href="{{ url_for('register') }}">Registrarse</a><br>
+    <a href="{{ url_for('login') }}">Iniciar sesión</a>
+</body>
+</html>
